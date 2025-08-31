@@ -1,0 +1,1292 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title></title>
+<link rel="apple-touch-icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@d6562a79075e061305ccfdb82f01e5e195e2d307/spark/css/spark-style.css" rel="stylesheet" />
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@7cc78ce/spark/js/jsontree.js"></script>
+<style type="text/css"></style></head><body class="spa bdd-report standard">
+  <div class="app">
+    <div class="layout">
+<div class="header navbar">
+<div class="vheader">
+<div class="nav-logo">
+<a href="#">
+<div class="logo" style="background-image: url('https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png')"></div>
+</a>
+</div>
+<ul class="nav-left">
+<li class="search-box">
+<a class="search-toggle" href="#">
+<i class="search-icon fa fa-search"></i>
+<i class="search-icon-close fa fa-close"></i>
+</a>
+</li>
+<li class="search-input"><input id="search-tests" class="form-control" type="text" placeholder="Search..."></li>
+</ul>
+<ul class="nav-right">
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary"></span></a>
+</li>
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary">Sept 1, 2025 02:09:46 am</span></a>
+</li>
+</ul>
+</div>
+</div><div class="side-nav">
+<div class="side-nav-inner">
+<ul class="side-nav-menu">
+<li class="nav-item dropdown" onclick="toggleView('test-view')">
+<a id="nav-test" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-list"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('exception-view')">
+<a id="nav-exception" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bug"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('dashboard-view')">
+<a id="nav-dashboard" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bar-chart"></i></span>
+</a>
+</li>
+</ul>
+</div>
+</div>      <div class="vcontainer">
+        <div class="main-content">
+<div class="test-wrapper row view test-view">
+  <div class="test-list">
+    <div class="test-list-tools">
+<ul class="tools pull-left">
+<li><a href="#"><span class="font-size-14">Tests</span></a></li>
+</ul>
+<ul class="tools text-right">
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
+<ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" status="pass" href="#"><span>Pass</span><span class="status success"></span></a>
+<a class="dropdown-item" status="fail" href="#"><span>Fail</span><span class="status danger"></span></a>
+<div class="dropdown-divider"></div>
+<a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
+</ul>
+</li>
+</ul>
+</div>    <div class="test-list-wrapper scrollable">
+      <ul class="test-list-item">
+        <li class="test-item"  status="pass" test-id="1"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">AB Testing page has two variations of the same page</p>
+            <p class="text-sm">
+              <span>2:09:47 am</span> / <span>00:00:13:760</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">AB Testing page has two variations of the same page</h5>
+<span class='badge badge-success'>09.01.2025 2:09:47 am</span>
+<span class='badge badge-danger'>09.01.2025 2:10:01 am</span>
+<span class='badge badge-default'>00:00:13:760</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="2"><span class="badge log pass-bg mr-2">Pass</span>Check if the user gets the control or variations version of the page</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepDefinitions.HomePageStepDefinitions.user_is_in_the_homepage()">
+                <span>Given User is in the Homepage</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.HomePageStepDefinitions.user_clicks_on_the_ab_testing_option_in_the_list()">
+                <span>And User clicks on the AB Testing option in the list</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.ABTestingStepDefinitions.check_if_user_is_redirect_to_ab_testing_page()">
+                <span>Then Check if user is redirect to AB testing page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.ABTestingStepDefinitions.check_if_the_user_is_falling_under_control_or_variation_cohort()">
+                <span>And Check if the user is falling under control or variation cohort</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="3"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Add and Delete Button</p>
+            <p class="text-sm">
+              <span>2:09:47 am</span> / <span>00:00:24:541</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Add and Delete Button</h5>
+<span class='badge badge-success'>09.01.2025 2:09:47 am</span>
+<span class='badge badge-danger'>09.01.2025 2:10:11 am</span>
+<span class='badge badge-default'>00:00:24:541</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=3</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="4"><span class="badge log pass-bg mr-2">Pass</span>Check if Add Button and delete buttons are functioning</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepDefinitions.HomePageStepDefinitions.user_is_redirected_to_add_remove_button_page()">
+                <span>Given User is redirected to Add Remove Button Page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.AddRemoveButtonStepDefinitions.check_if_add_buttons_adds_more_buttons()">
+                <span>Then Check if Add buttons adds more buttons</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.AddRemoveButtonStepDefinitions.check_if_all_the_buttons_added_can_be_deleted()">
+                <span>And Check if all the buttons added can be deleted</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="5"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Test if user is able to login inside this base authentication page</p>
+            <p class="text-sm">
+              <span>2:09:47 am</span> / <span>00:00:13:298</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Test if user is able to login inside this base authentication page</h5>
+<span class='badge badge-success'>09.01.2025 2:09:47 am</span>
+<span class='badge badge-danger'>09.01.2025 2:10:00 am</span>
+<span class='badge badge-default'>00:00:13:298</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=5</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="6"><span class="badge log pass-bg mr-2">Pass</span>Check if user can add username and password to login in to the basic auth page</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepDefinitions.BasicAuthStepDefinitions.user_is_in_home_page_and_tries_to_redirect_to_basic_auth_page()">
+                <span>Given User is in home page and tries to redirect to Basic Auth Page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.BasicAuthStepDefinitions.user_is_able_login_to_basic_auth_page()">
+                <span>Then User is able login to basic Auth page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.BasicAuthStepDefinitions.user_is_has_entered_the_auth_page_and_is_able_to_see_the_page_s_contents()">
+                <span>And User is has entered the Auth Page and is able to see the page's contents</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="7"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">The webpage has two check boxes that can be toggled on and off</p>
+            <p class="text-sm">
+              <span>2:09:47 am</span> / <span>00:00:14:259</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">The webpage has two check boxes that can be toggled on and off</h5>
+<span class='badge badge-success'>09.01.2025 2:09:47 am</span>
+<span class='badge badge-danger'>09.01.2025 2:10:01 am</span>
+<span class='badge badge-default'>00:00:14:259</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=7</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="8"><span class="badge log pass-bg mr-2">Pass</span>Check if both the check boxes are selected if not then select them</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepDefinitions.HomePageStepDefinitions.user_is_on_homepage_and_goes_to_checkboxes_page()">
+                <span>Given User is on Homepage and goes to Checkboxes page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.CheckboxesStepDefinitions.user_sees_if_there_are_check_boxes(java.lang.Integer)">
+                <span>When User sees if there are 2 check boxes</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.CheckboxesStepDefinitions.user_selects_both_checkboxes()">
+                <span>Then User selects both checkboxes</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="9"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Several images are provided in which some of them are broken</p>
+            <p class="text-sm">
+              <span>2:09:47 am</span> / <span>00:00:24:550</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Several images are provided in which some of them are broken</h5>
+<span class='badge badge-success'>09.01.2025 2:09:47 am</span>
+<span class='badge badge-danger'>09.01.2025 2:10:11 am</span>
+<span class='badge badge-default'>00:00:24:550</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=9</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="10"><span class="badge log pass-bg mr-2">Pass</span>Check if image is broken or loading correctly</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepDefinitions.HomePageStepDefinitions.user_is_in_homepage_and_redirects_themself_to_broken_images_link()">
+                <span>Given User is in homepage and redirects themself to Broken Images link</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.BrokenImageStepDefinitions.check_if_image_link_returns_status_code(java.lang.Integer)">
+                <span>Then Check if image link returns status code 200</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.BrokenImageStepDefinitions.check_if_image_s_width_is_more_than(java.lang.Integer)">
+                <span>And Check if image's width is more than 0</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="11"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">The page contains items that disappears when user reload the page</p>
+            <p class="text-sm">
+              <span>2:09:47 am</span> / <span>00:00:26:986</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">The page contains items that disappears when user reload the page</h5>
+<span class='badge badge-success'>09.01.2025 2:09:47 am</span>
+<span class='badge badge-danger'>09.01.2025 2:10:14 am</span>
+<span class='badge badge-default'>00:00:26:986</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=11</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="12"><span class="badge log pass-bg mr-2">Pass</span>Check if items disappear and reappear when user reloads the game</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepDefinitions.HomePageStepDefinitions.user_is_on_homepage_and_clicks_on_disappearing_items_button()">
+                <span>Given User is on homepage and clicks on Disappearing Items button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.DisappearingItemsStepDefinitions.user_reloads_the_page_times(java.lang.Integer)">
+                <span>When User reloads the page 20 times</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.DisappearingItemsStepDefinitions.check_if_buttons_disappear_and_appear()">
+                <span>Then Check if buttons disappear and appear</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.DisappearingItemsStepDefinitions.check_which_buttons_disappear_and_appear()">
+                <span>And Check which buttons disappear and appear</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="13"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Testing the challenging DOM</p>
+            <p class="text-sm">
+              <span>2:09:47 am</span> / <span>00:00:27:414</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Testing the challenging DOM</h5>
+<span class='badge badge-success'>09.01.2025 2:09:47 am</span>
+<span class='badge badge-danger'>09.01.2025 2:10:14 am</span>
+<span class='badge badge-default'>00:00:27:414</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=13</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="14"><span class="badge log pass-bg mr-2">Pass</span>Check if a particular button can be tapped even if the locater are hard to find</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepDefinitions.HomePageStepDefinitions.user_is_on_homepage_and_goes_to_challenging_dom_page()">
+                <span>Given User is on Homepage and goes to Challenging DOM page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.ChallengingDOMStepDefinitions.user_tries_to_tap_on_blue_button_times(java.lang.Integer)">
+                <span>Then User tries to tap on blue button 5 times</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.ChallengingDOMStepDefinitions.user_tries_to_tap_on_red_button_times(java.lang.Integer)">
+                <span>And User tries to tap on red button 5 times</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.ChallengingDOMStepDefinitions.user_tries_to_tap_on_green_button_times(java.lang.Integer)">
+                <span>And User tries to tap on green button 5 times</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="15"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Check if Home page is of The internet Herokuapp is looking and working fine</p>
+            <p class="text-sm">
+              <span>2:09:47 am</span> / <span>00:00:10:691</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Check if Home page is of The internet Herokuapp is looking and working fine</h5>
+<span class='badge badge-success'>09.01.2025 2:09:47 am</span>
+<span class='badge badge-danger'>09.01.2025 2:09:58 am</span>
+<span class='badge badge-default'>00:00:10:691</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=15</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="16"><span class="badge log pass-bg mr-2">Pass</span>Check if the Homepage of the internet Herokuapp is loading fine</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepDefinitions.HomePageStepDefinitions.user_opens_the_browser()">
+                <span>Given User opens the browser</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.HomePageStepDefinitions.redirects_to_the_internet_herokuapp_website()">
+                <span>And Redirects to the internet Herokuapp website</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.HomePageStepDefinitions.the_tile_of_the_of_website_is(java.lang.String)">
+                <span>Then The tile of the of website is The Internet</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.HomePageStepDefinitions.the_heading_is(java.lang.String)">
+                <span>And The heading is Welcome to the-internet</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="17"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Context Menu page has box which on right clicking will trigger a java alert</p>
+            <p class="text-sm">
+              <span>2:09:47 am</span> / <span>00:00:14:372</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Context Menu page has box which on right clicking will trigger a java alert</h5>
+<span class='badge badge-success'>09.01.2025 2:09:47 am</span>
+<span class='badge badge-danger'>09.01.2025 2:10:01 am</span>
+<span class='badge badge-default'>00:00:14:372</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=17</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="18"><span class="badge log pass-bg mr-2">Pass</span>Check if on right clicking the box. JavaScript Alert is triggered</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepDefinitions.HomePageStepDefinitions.user_landing_in_homepage_and_enters_context_menu_page()">
+                <span>Given User landing in homepage and enters ContextMenu Page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.ContextMenuStepDefinitions.user_right_clicks_on_the_box()">
+                <span>When User right clicks on the box</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.ContextMenuStepDefinitions.a_java_script_alert_is_triggers()">
+                <span>Then A JavaScript alert is triggers</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.ContextMenuStepDefinitions.also_check_if_this_alert_can_be_closed()">
+                <span>And Also check if this alert can be closed</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="19"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Digest Auth is secure way to login in</p>
+            <p class="text-sm">
+              <span>2:09:47 am</span> / <span>00:00:14:371</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Digest Auth is secure way to login in</h5>
+<span class='badge badge-success'>09.01.2025 2:09:47 am</span>
+<span class='badge badge-danger'>09.01.2025 2:10:01 am</span>
+<span class='badge badge-default'>00:00:14:371</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=19</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="20"><span class="badge log pass-bg mr-2">Pass</span>Check if user can enter Digest Auth Page using the credentials</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepDefinitions.HomePageStepDefinitions.user_is_on_homepage_and_tries_to_enter_digest_auth_page()">
+                <span>Given User is on homepage and tries to enter Digest Auth Page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.DigestAuthStepDefinitions.user_enters_the_correct_username_and_password()">
+                <span>When User Enters the correct username and password</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.DigestAuthStepDefinitions.user_enters_digest_auth_page()">
+                <span>Then User enters Digest Auth Page</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="51"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">The page allows user to drag and drop items from A to B</p>
+            <p class="text-sm">
+              <span>2:09:58 am</span> / <span>00:00:13:830</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">The page allows user to drag and drop items from A to B</h5>
+<span class='badge badge-success'>09.01.2025 2:09:58 am</span>
+<span class='badge badge-danger'>09.01.2025 2:10:11 am</span>
+<span class='badge badge-default'>00:00:13:830</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=51</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="52"><span class="badge log pass-bg mr-2">Pass</span>Check if A box can be dragged to B box position and vice versa</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepDefinitions.HomePageStepDefinitions.user_is_in_homepage_and_clicks_on_drag_and_drop_button()">
+                <span>Given User is in homepage and clicks on Drag and Drop button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.DragAndDropStepDefinitions.user_drags_a_to_b()">
+                <span>When User drags A to B</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.DragAndDropStepDefinitions.a_should_be_replaced_with_b()">
+                <span>Then A should be replaced with B</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.DragAndDropStepDefinitions.places_b_back_to_a()">
+                <span>When Places B back to A</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.DragAndDropStepDefinitions.b_should_be_replaced_with_a()">
+                <span>Then B should be replaced with A</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="84"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">This page has a dropdown box from which user can select any option</p>
+            <p class="text-sm">
+              <span>2:10:00 am</span> / <span>00:00:11:201</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">This page has a dropdown box from which user can select any option</h5>
+<span class='badge badge-success'>09.01.2025 2:10:00 am</span>
+<span class='badge badge-danger'>09.01.2025 2:10:11 am</span>
+<span class='badge badge-default'>00:00:11:201</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=84</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="85"><span class="badge log fail-bg mr-2">Fail</span>Check if user can select option 1 and then option 2</div>
+          <div class="status-avatar float-right mr-4">
+            <i class="fa fa-paperclip"></i>
+          </div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepDefinitions.HomePageStepDefinitions.user_is_in_hompage_and_then_clicks_on_drop_down_button()">
+                <span>Given User is in hompage and then clicks on Drop Down button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.DropDownStepDefinitions.user_click_on_dropdown_option()">
+                <span>When User click on dropdown option</span>
+      <div>
+      </div>
+              </div>
+              <div class="step fail-bg" title="stepDefinitions.DropDownStepDefinitions.user_is_able_to_select_option(java.lang.Integer)">
+                <span>Then User is able to select option 1</span>
+      <div>
+        <textarea disabled class="code-block">java.lang.AssertionError: expected [Optionasd 1] but found [Option 1]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1590)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at org.testng.Assert.assertEquals(Assert.java:666)
+	at pageObjects.DropDownPage.CheckWitchIsSelected(DropDownPage.java:34)
+	at stepDefinitions.DropDownStepDefinitions.user_is_able_to_select_option(DropDownStepDefinitions.java:25)
+	at ✽.User is able to select option 1(file:///D:/Intellij%20projects/AutomationTestingOfTheInternetHerokuapp/src/test/java/features/DropDown.feature:7)
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>stepDefinitions.Hooks.AddScreenshot(io.cucumber.java.Scenario)</span>
+      <div>image
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./screenshot/embedded1.png' src="./screenshot/embedded1.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepDefinitions.DropDownStepDefinitions.after_which_user_is_able_to_select_option(java.lang.Integer)">
+                <span>And After which User is able to select option 2</span>
+      <div>Step skipped
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="87"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Dynamic Content page has images and text that changes on every reload</p>
+            <p class="text-sm">
+              <span>2:10:01 am</span> / <span>00:00:10:859</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Dynamic Content page has images and text that changes on every reload</h5>
+<span class='badge badge-success'>09.01.2025 2:10:01 am</span>
+<span class='badge badge-danger'>09.01.2025 2:10:11 am</span>
+<span class='badge badge-default'>00:00:10:859</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=87</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="88"><span class="badge log pass-bg mr-2">Pass</span>Verify that Content updates on every refresh</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepDefinitions.HomePageStepDefinitions.user_is_in_homepage_and_redirects_to_dynamic_content_page()">
+                <span>Given User is in homepage and redirects to Dynamic Content Page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.DynamicContentStepDefinitions.user_reloads_the_dynamic_content_page()">
+                <span>When User reloads the dynamic content page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.DynamicContentStepDefinitions.text_and_images_should_change()">
+                <span>Then Text and images should change</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="90"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">The page has dynamic controls/buttons that appear after few seconds of loading time</p>
+            <p class="text-sm">
+              <span>2:10:01 am</span> / <span>00:00:22:638</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">The page has dynamic controls/buttons that appear after few seconds of loading time</h5>
+<span class='badge badge-success'>09.01.2025 2:10:01 am</span>
+<span class='badge badge-danger'>09.01.2025 2:10:24 am</span>
+<span class='badge badge-default'>00:00:22:638</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=90</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="91"><span class="badge log pass-bg mr-2">Pass</span>Check if checkbox disappears on tapping the Remove button</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepDefinitions.HomePageStepDefinitions.user_is_in_homepage_and_goes_to_dynamic_control_page()">
+                <span>Given User is in homepage and goes to Dynamic Control Page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.DynamicControlStepDefinitions.user_taps_on_remove_button()">
+                <span>When User taps on Remove button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.DynamicControlStepDefinitions.a_check_box_is_removed()">
+                <span>Then A check box is removed</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.DynamicControlStepDefinitions.remove_button_changes_to_add_button()">
+                <span>And Remove button changes to Add button</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="93"><span class="badge log pass-bg mr-2">Pass</span>Check if Text box becomes enabled when user taps on enable button</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepDefinitions.HomePageStepDefinitions.user_is_in_homepage_and_goes_to_dynamic_control_page()">
+                <span>Given User is in homepage and goes to Dynamic Control Page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.DynamicControlStepDefinitions.user_taps_on_enable_button()">
+                <span>When User taps on Enable button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.DynamicControlStepDefinitions.text_box_is_enabled()">
+                <span>Then Text box is enabled</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.DynamicControlStepDefinitions.enable_button_changes_to_disable_button()">
+                <span>And Enable button changes to Disable button</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="94"><span class="badge log pass-bg mr-2">Pass</span>Check if checkbox appears on tapping Add button</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepDefinitions.HomePageStepDefinitions.user_is_in_homepage_and_goes_to_dynamic_control_page()">
+                <span>Given User is in homepage and goes to Dynamic Control Page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.DynamicControlStepDefinitions.userTapsOnRemoveButtonToChangeItToAdd()">
+                <span>When User taps on Remove button to change it to Add</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.DynamicControlStepDefinitions.user_taps_on_add_button()">
+                <span>And User taps on Add button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.DynamicControlStepDefinitions.a_check_box_is_added()">
+                <span>Then A check box is added</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.DynamicControlStepDefinitions.add_button_changes_to_remove_button()">
+                <span>And Add button changes to remove button</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="145"><span class="badge log pass-bg mr-2">Pass</span>Check if Text box becomes disabled when user taps on disabled button</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepDefinitions.HomePageStepDefinitions.user_is_in_homepage_and_goes_to_dynamic_control_page()">
+                <span>Given User is in homepage and goes to Dynamic Control Page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.DynamicControlStepDefinitions.user_taps_on_enable_button_to_change_to_disable()">
+                <span>When User taps on Enable button to change to Disable</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.DynamicControlStepDefinitions.user_taps_on_disable_button()">
+                <span>And User taps on Disable button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.DynamicControlStepDefinitions.text_box_is_disabled()">
+                <span>Then Text box is Disabled</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.DynamicControlStepDefinitions.disable_button_changes_to_enable_button()">
+                <span>And Disable button changes to Enable button</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="147"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">This page allows user to upload any file and gives confirmation if a file is uploaded successfully</p>
+            <p class="text-sm">
+              <span>2:10:11 am</span> / <span>00:00:06:434</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">This page allows user to upload any file and gives confirmation if a file is uploaded successfully</h5>
+<span class='badge badge-success'>09.01.2025 2:10:11 am</span>
+<span class='badge badge-danger'>09.01.2025 2:10:18 am</span>
+<span class='badge badge-default'>00:00:06:434</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=147</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="148"><span class="badge log pass-bg mr-2">Pass</span>Check if file can be uploaded</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepDefinitions.HomePageStepDefinitions.user_is_on_homepage_and_clicks_on_file_upload_page()">
+                <span>Given User is on homepage and clicks on File Upload Page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.FileUploadStepDefinitions.user_uploads_the_file()">
+                <span>When User uploads the file</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.FileUploadStepDefinitions.user_gets_a_message_that_file_has_be_uploaded_succesfully()">
+                <span>Then User gets a message that file has be uploaded succesfully</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+<div class="test-content scrollable">
+<div class="test-content-tools">
+<ul><li><a class="back-to-test" href="#"><i class="fa fa-arrow-left"></i></a></li></ul>
+</div>
+<div class="test-content-detail"><div class="detail-body"></div></div>
+</div></div>
+<div class="test-wrapper row view exception-view attributes-view">
+<div class="test-list">
+<div class="test-list-tools">
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Exception</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">1</span></a></li></ul>
+</div>
+<div class="test-list-wrapper scrollable">
+<ul class="test-list-item">
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">java.lang.AssertionError</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>java.lang.AssertionError</h4>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>02:10:08 am</td>
+<td>
+<a href="#" class="linked" test-id='84' id='118'>Then User is able to select option 1</a>
+<div class="">
+<span class="badge badge-default">This page has a dropdown box from which user can select any option.Check if user can select option 1 and then option 2.Then User is able to select option 1</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="test-content scrollable">
+<div class="test-content-detail">
+<div class="detail-body"></div>
+</div>
+</div>
+</div><div class="container-fluid p-4 view dashboard-view">
+<div class="row">
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Started</p>
+<h3>Sept 1, 2025 02:09:46 am</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Ended</p>
+<h3>Sept 1, 2025 02:10:24 am</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-pass">Features Passed</p>
+<h3>14</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-fail">Features Failed</p>
+<h3>1</h3>
+</div></div>
+</div>
+</div>
+<div class="row">
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Features</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='parent-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='93%'>
+<b>14</b> features passed
+</small>
+</div>
+<div>
+<small data-tooltip='6%'><b>1</b> features failed,
+<b>0</b> skipped, <b data-tooltip='0%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Scenarios</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='child-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='94%'><b>17</b> scenarios passed</small></div>
+<div>
+<small data-tooltip='5%'><b>1</b> scenarios failed,
+<b>0</b> skipped, <b data-tooltip='%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Steps</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='grandchild-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='97%'><b>67</b> steps passed</small></div>
+<div>
+<small data-tooltip='1%'><b>1</b> steps failed,
+<b>1</b> skipped, <b data-tooltip='%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><div class="col-md-12">
+<div class="card"><div class="card-header"><p>Timeline</p></div>
+<div class="card-body pt-0"><div>
+<canvas id="timeline" height="120"></canvas>
+</div></div>
+</div>
+</div></div>
+<script>
+var timeline = {
+"AB Testing page has two variations of the same page":13.76,"Add and Delete Button":24.541,"Test if user is able to login inside this base authentication page":13.298,"The webpage has two check boxes that can be toggled on and off":14.259,"Several images are provided in which some of them are broken":24.55,"The page contains items that disappears when user reload the page":26.986,"Testing the challenging DOM":27.414,"Check if Home page is of The internet Herokuapp is looking and working fine":10.691,"Context Menu page has box which on right clicking will trigger a java alert":14.372,"Digest Auth is secure way to login in":14.371,"The page allows user to drag and drop items from A to B":13.83,"This page has a dropdown box from which user can select any option":11.201,"Dynamic Content page has images and text that changes on every reload":10.859,"The page has dynamic controls/buttons that appear after few seconds of loading time":22.638,"This page allows user to upload any file and gives confirmation if a file is uploaded successfully":6.434
+};
+</script>
+<div class="row">
+</div>
+</div>
+<script>
+var statusGroup = {
+parentCount: 5,
+passParent: 14,
+failParent: 1,
+warningParent: 0,
+skipParent: 0,
+childCount: 5,
+passChild: 17,
+failChild: 1,
+warningChild: 0,
+skipChild: 0,
+infoChild: 0,
+grandChildCount: 5,
+passGrandChild: 67,
+failGrandChild: 1,
+warningGrandChild: 0,
+skipGrandChild: 1,
+infoGrandChild: 0,
+eventsCount: 5,
+};
+</script>        </div>
+      </div>
+    </div>
+  </div>
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@d6562a79075e061305ccfdb82f01e5e195e2d307/spark/js/spark-script.js"></script>
+<script type="text/javascript"></script></body>
+</html>
